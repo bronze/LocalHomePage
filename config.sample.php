@@ -15,7 +15,7 @@
 $projroot = './';
 
 /** directory name(s) */
-$dir = array("/Users/username/Sites/*");
+$dir = array_filter(glob('/Users/username/Sites/*'), 'is_dir');
 					
 /** Your local top level domain */
 $tld = 'dev';
